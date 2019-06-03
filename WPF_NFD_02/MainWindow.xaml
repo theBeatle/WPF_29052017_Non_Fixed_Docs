@@ -1,0 +1,193 @@
+﻿<Window x:Class="WPF_NFD_02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_NFD_02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="525">
+    <!--<FlowDocumentScrollViewer x:Name="docViewer" IsToolBarVisible="True" >-->
+    <FlowDocumentReader x:Name="docViewer" >
+    <FlowDocument>
+
+            <BlockUIContainer>
+                <StackPanel>
+                    <Button Click="Button_Click" HorizontalAlignment="Stretch" Padding="5">Create dynamic document</Button>
+                </StackPanel>
+            </BlockUIContainer>
+            <Paragraph FontSize="20" Foreground="Red">The largest cities</Paragraph>
+        <Table>
+            <Table.Columns>
+                <TableColumn Width="*"></TableColumn>
+                <TableColumn Width="3*"></TableColumn>
+                <TableColumn Width="*"></TableColumn>
+            </Table.Columns>
+           
+            
+
+            <TableRowGroup>
+                <TableRow FontWeight="Bold" FontSize="16" >
+                    <TableCell >
+                        <Paragraph>Position</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>City</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Population</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>1</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Rome</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>450,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>2</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Luoyang (Honan), China</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>420,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>3</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Seleucia (on the Tigris), Iraq</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>250,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>4</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Alexandria, Egypt</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>250,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>5</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Antioch, Turkey</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>150,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>6</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Anuradhapura, Sri Lanka</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>130,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>7</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Peshawar, Pakistan</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>120,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>8</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Carthage, Tunisia</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>100,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>9</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph Foreground="BlueViolet">Suzhou, China</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>n/a</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow FontWeight="Bold">
+                    <TableCell>
+                        <Paragraph>10</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                            <Paragraph>
+                                <Span Background="#FF09A617" FontWeight="ExtraBold"  Foreground="Cornsilk">
+                                    Smyrna
+                                 </Span>
+                                Turkey
+                                <Span Background="#EAFFCDF8">
+                                    Antalia</Span>
+                            </Paragraph>
+                        </TableCell>
+                    <TableCell>
+                        <Paragraph>90,000</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow >
+                        <TableCell>
+                            <Paragraph>
+                                <Hyperlink NavigateUri="http:\\microsoft.com">http:\\microsoft.com</Hyperlink>
+                            </Paragraph>
+                        </TableCell>
+                    </TableRow>
+            </TableRowGroup>
+        </Table>
+
+
+                   <Paragraph TextAlignment="Left"> klkkl;k;;lkl;k sdlfkdlf sdlfkdfk sdlsfklk;s dlksffk dskflk d;fk sdklfjdkl 
+                       fsdf dfsffdsf dfsf dfsdf dfsfds dsfd ds dsdf dsf f
+                <LineBreak />df dfdf fdsfdf sdfdfd sdfdfsd sdfdsfds sdfsf sd
+                <Floater Width="170" Padding="5" HorizontalAlignment="Left" FontSize="18" FontStyle="Italic" >
+                            <Paragraph> Hello worlkjklj kjljk kljklj klj  dffd dfsdff dfdsfdf lkjd App!</Paragraph>
+                        </Floater>
+                        
+                       <Figure Width="170" Padding="5" VerticalAnchor="PageBottom" HorizontalAnchor="PageCenter" FontSize="18" FontStyle="Italic">
+                            <Paragraph>Hello world Ap;lkl;k; ;lkl;lkl kl;k;lk;l lk;lkl;p!</Paragraph>
+                        </Figure>
+
+            </Paragraph>
+                    <!--<Paragraph>
+                        <Figure Width="170" Padding="5" VerticalAnchor="PageBottom" HorizontalAnchor="PageCenter" FontSize="18" FontStyle="Italic">
+                            <Paragraph>Hello world Ap;lkl;k; ;lkl;lkl kl;k;lk;l lk;lkl;p!</Paragraph>
+                        </Figure>
+                    </Paragraph>-->
+
+            
+
+
+
+        </FlowDocument>
+    </FlowDocumentReader>
+</Window>
+
